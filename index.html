@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:plum;
+            text-align: center;
+        }
+
+        quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color:plum;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .option {
+            margin: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>    Quiz</h1></center>
+
+<div id="quiz-container">
+    <div class="question">
+        <p>1. What is the capital of France?</p>
+        <div class="options">
+            <label class="option"><input type="radio" name="q1" value="paris"> Paris</label>
+            <label class="option"><input type="radio" name="q1" value="london"> London</label>
+            <label class="option"><input type="radio" name="q1" value="berlin"> Berlin</label>
+            <label class="option"><input type="radio" name="q1" value="rome"> Rome</label>
+        </div>
+    </div>
+
+    <!-- Repeat the above block for the remaining questions -->
+
+    <!-- Question 2 -->
+    <div class="question">
+        <p>2. What is the capital of Japan?</p>
+        <div class="options">
+            <label class="option"><input type="radio" name="q2" value="tokyo"> Tokyo</label>
+            <label class="option"><input type="radio" name="q2" value="seoul"> Seoul</label>
+            <label class="option"><input type="radio" name="q2" value="beijing"> Beijing</label>
+            <label class="option"><input type="radio" name="q2" value="manila"> Manila</label>
+        </div>
+    </div>
+
+    <!-- Repeat the above block for the remaining questions -->
+
+   
+</div>
+<div class="question">
+    <p>3.What element makes up approximately 78% of Earth's atmosphere?</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q3" value="Oxygen"> Oxygen</label>
+            <label class="option"><input type="radio" name="q3" value="Nitrogen"> Nitrogen</label>
+            <label class="option"><input type="radio" name="q3" value="Carbon dioxide">Carbon dioxide</label>
+            <label class="option"><input type="radio" name="q3" value="Helium">Helium</label>
+    </div>
+</div>
+<div class="question">
+    <p>4.Which country has the largest landmass in the world?</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q4" value="India"> India</label>
+            <label class="option"><input type="radio" name="q4" value="Russia"> Russia</label>
+            <label class="option"><input type="radio" name="q4" value="China">China</label>
+            <label class="option"><input type="radio" name="q4" value="Japan">Japan</label>
+    </div>
+</div>
+
+<div class="question">
+    <p>5.How many hearts does an octopus have</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q5" value="1"> 1</label>
+            <label class="option"><input type="radio" name="q5" value="2"> 2</label>
+            <label class="option"><input type="radio" name="q5" value="3">3</label>
+            <label class="option"><input type="radio" name="q5" value="4">4</label>
+    </div>
+</div>
+
+
+<div class="question">
+    <p>6.cryptography has___ types</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q6" value="1"> 1</label>
+            <label class="option"><input type="radio" name="q6" value="2"> 2</label>
+            <label class="option"><input type="radio" name="q6" value="3">3</label>
+            <label class="option"><input type="radio" name="q6" value="4">4</label>
+    </div>
+</div>
+
+<div class="question">
+    <p>7.Which programming language is commonly used for building web pages?</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q7" value="python"> python</label>
+            <label class="option"><input type="radio" name="q7" value="c++"> c++</label>
+            <label class="option"><input type="radio" name="q7" value="HTML">HTML</label>
+            <label class="option"><input type="radio" name="q7" value="C">C</label>
+    </div>
+</div>
+
+<div class="question">
+    <p>8.Which protocol is commonly used for secure communication over the Internet, especially for online transactions?</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q8" value="HTTP"> HTTP</label>
+            <label class="option"><input type="radio" name="q8" value="STP">STP</label>
+            <label class="option"><input type="radio" name="q8" value="TCP">TCP</label>
+            <label class="option"><input type="radio" name="q8" value="HTTPS">HTTPS</label>
+    </div>
+</div>
+
+<div class="question">
+    <p>9.What is the term for a program that replicates itself and spreads to other computers or networks?</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q9" value="worm"> worm</label>
+            <label class="option"><input type="radio" name="q9" value="virus"> virus</label>
+            <label class="option"><input type="radio" name="q9" value="Trojan">Trojan</label>
+            <label class="option"><input type="radio" name="q9" value="root">root</label>
+    </div>
+</div>
+
+
+<div class="question">
+    <p>10.Which company developed the Android operating system?</p>
+    <div class="options">
+        <label class="option"><input type="radio" name="q10" value="Google"> Google</label>
+            <label class="option"><input type="radio" name="10" value="Apple"> Apple</label>
+            <label class="option"><input type="radio" name="10" value=" Microsoft"> Microsoft</label>
+            <label class="option"><input type="radio" name="10" value="Samsung">Samsung</label>
+    </div>
+</div>
+
+<button onclick="calculateScore()">Submit</button>
+<div id="result"></div>
+
+<script>
+    function calculateScore() {
+      
+
+        let score = 0;
+
+        if (document.querySelector('input[name="q1"]:checked').value === 'paris') {
+            score++;
+        }
+
+        if (document.querySelector('input[name="q2"]:checked').value === 'tokyo') {
+            score++;
+        }
+
+        if (document.querySelector('input[name="q3"]:checked'.value=== 'Oxygen')){
+            score++;
+        }
+
+        if (document.querySelector('input[name="q4"]:checked'.value=== 'Russia')){
+            score++;
+        }
+
+        if (document.querySelector('input[name="q5"]:checked'.value=== '3')){
+            score++;
+        }
+
+        if (document.querySelector('input[name="q6"]:checked'.value=== '2')){
+            score++;
+        }
+
+        
+        if (document.querySelector('input[name="q7"]:checked'.value=== 'HTML')){
+            score++;
+        }
+
+
+        if (document.querySelector('input[name="q8"]:checked'.value=== 'HTTPS')){
+            score++;
+        }
+
+        if (document.querySelector('input[name="q9"]:checked'.value=== 'worm')){
+            score++;
+        }
+
+
+        if (document.querySelector('input[name="q10"]:checked'.value=== 'Google')){
+            score++;
+        }
+        document.getElementById('result').innerHTML = 'Your score: ${score} out of 10';
+    }
+</script>
+
+</body>
+</html>
